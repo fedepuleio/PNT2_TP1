@@ -13,5 +13,16 @@ const personajesSimpsons = [
 
 // Ejercicio 1 
 
+
 const mayores = personajesSimpsons.filter(x => x.edad > 18);
-console.log(mayores);
+console.log(mayores)
+
+// Ejercicio 2
+
+const sumaEdades = mayores.reduce( (acc, personaje) => { return acc + personaje.edad} ,0);
+
+console.log(sumaEdades);
+
+
+
+
