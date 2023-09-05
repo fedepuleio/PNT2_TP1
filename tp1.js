@@ -29,10 +29,25 @@ const nombresPersonajes = menores.map( x => x.nombre);
 
 console.log(nombresPersonajes);
 
-// Ejercicio 4
+// Ejercicio 4 
 
+const cambioRoles = menores.map( ({nombre,edad,rol}) => {
+rol = "Estudiante";
+return {nombre,edad,rol};
+});
 
+console.log(cambioRoles);
 
+// Ejercicio 5 
 
+const personajesSouthPark = [
+    { nombre: "Cartman", edad: 10, rol: "Estudiante" },
+    { nombre: "Kyle", edad: 10, rol: "Estudiante" },
+    { nombre: "Stan", edad: 10, rol: "Estudiante" },
+    { nombre: "Kenny", edad: 10, rol: "Estudiante" }
+    ];
 
+const todos = [...personajesSimpsons,...personajesSouthPark];
+
+console.log(todos);
 
