@@ -23,6 +23,12 @@ const sumaEdades = mayores.reduce( (acc, personaje) => { return acc + personaje.
 
 console.log(sumaEdades);
 
+// Ejercicio 3
+
+const nombresPersonajes = mayores.map( x => x.nombre);
+
+console.log(nombresPersonajes);
+
 
 
 
